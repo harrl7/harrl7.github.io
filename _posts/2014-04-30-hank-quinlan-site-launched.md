@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Liam Harris, Launches Site"
 date: 2017-03-30
 ---
