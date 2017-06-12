@@ -5,6 +5,7 @@ title: Project 1
 <div class="blurb">
 	
 	<h1>Project 1 <small>Evidence Portfolio</small></h1>
+	<br>
 
 	<h2>User Interaction with Google Cardboard</h2>
 	
@@ -20,8 +21,8 @@ title: Project 1
 	For the prototype the command “next” can be used to move to the next image. Voice listening was activated when the image was changed. This was unintuitive and clumsy for users. For a more robust execution I would want a dedicated action that activates the voice prompt.
 	</p>
 	
-	<br><br>
 	
+	<br><br>
 	<h2>Magnetic Button</h2>
 	
 	<p>
@@ -35,23 +36,52 @@ title: Project 1
 	I learned to consider the platform I am developing for, when designing projects. The problem of building the calibration system initially appeared simple, because I was not considering the strengths and weaknesses of the VR platform
 	</p>
 	
-	<br><br>
 	
+	<br><br>
 	<h2>Android Logic Timing</h2>
 	
 	<p>
 	Another technical challenge was running the update logic for the program on a timer loop. I needed to implement this on the vision testing tool for Android. This is a suite of tools to aid people with visual impairment. I needed to build a system for moving on-screen graphics used in the test tools. This was a challenge because the user interface can only be updated on the main thread, and the timer runs on a separate thread. I also wanted the architecture to be easily extendable so I could add additional test tools.
 	I started by having each fragment handle its own timing. This meant each tool could have very specialised and efficient timing mechanisms. The cost of this is that I had to duplicate code to build the timing system for each tool. And the lack of uniformity in the tools made it clumsy to integrate multiple tool fragments into the main system, as I needed the application to switch between and run the multiple tool fragments.
 	I made an interface IVisualTest for test tool fragments. This let me use the generic test tool function calls in the outer logic control on the MainActivity. 
+	<br>
 	The methods I included in the interface are:
-		
+	</p>
+	
 	<table>
 		<tr> <td>Run()</td> 	    <td>The main logic loop of the tool. To be called on every update cycle</td> </tr>
 		<tr> <td>ToCSV()</td> 	    <td>Print the test results to a csv formatted string, for saving results</td> </tr>
 		<tr> <td>GetTestType()</td> <td>Return a unique identifier string for the tool, for file naming purposes</td> <t/r>
 	</table>
-
+	
+	<p>
 	The solution I implemented was to have a shared timer on the MainActivity that drives the logic of the application. The current tool’s fragment is stored in the testFrag variable of type IVisualTest Each cycle the timer thread is paused for a preset delay, then I use runOnUiThread() to run current fragment’s Run() function. This makes the outer logic loop generic across all the different test tools. This system is very scalable, I can easily change the current test tool and add new tools without modifying the main timer loop. 
 	</p>
+			
 	
+	<br><br>
+	<h2>Filtering Django JSON Output</h2>
+			
+	<p>		
+	
+	</p>	
+		
+			
+	<br><br>
+	<h2>Reflective Statement</h2>	
+			
+	<p>
+	My experience has greatened my understanding on developing large scale projects in a team environment. I have learned to build strong group cohesion and how to manage longer term projects.
+ 	<br>
+	Maintaining good communication is imperative to keeping the team moving as a coordinated unit. I had to adjust my mindset from working on small individual tasks. Early on the group was focused on smaller individual tasks, and learning the technologies we would be working with during development. During this time able to get away with weak communication. So I didn’t really bother to keep my team updated on my progress or share resources. It would have helped the team get into a good workflow if we had better communication in the early weeks of the project.
+	Not building strong communication early on in the project hurt the group when we moved into working on large group tasks. The first group task we worked on was to build an API using the Django Rest framework. We didn’t coordinate very well and this made the group much less efficient. We divided efforts unnecessarily and people were working separately where we could have worked more cohesively. This introduced the additional task of integrating everyone's individual work into the final product.
+	Through my work in project I have developed my ability to effectively communicate in a group work environment. I always try and make sure my team is updated on my progress when I am assigned tasks. I show my work when I meet with the group so everyone has a good idea of what I have done. I also keep updated on the progress of the other members of my team. This reduces the strain on the group when integrating my work into larger projects, or when other team members are tasked to expand on work I have developed. 
+	<br>
+	Forming a good plan has also been an important part of development. I learned to better manage my time spent on work. And to organise with my team to keep working at optimal efficiency.
+	<br>
+	I have learned to better manage my time and plan milestones. I have to plan for setbacks and additional duties that can arise during development. This would often be work for my other classes. When I planned time to set aside to work on my task for the project I would not allow time to work on tasks for my other classes. When my scheduling was thrown off by this I had to rush out work to meet deadlines. And I could not take my time to develop my work as much as I’d have liked. 
+	<br>
+	Another aspect of planning is to organize with your team. When I started project I wasn’t very forward thinking in how I collaborated with the rest of my group. I would work in a similar manner to how how I do my regular work. Also it often seemed that team members were unsure of what tasks they were assigned to. And people took on work that could have been spread across the team. Which doesn’t take full advantage of working with a group. And the poor organisation made it needlessly difficult to deal to team level tasks when they occurred. 
+	I learned it is important to have early ongoing communication with my team. Creating a plan of how tasks will be divided amongst the group makes it easier to hold formation during development. When everyone is aware of what their own tasks and what everyone else has been assigned, the group is more able to work as a coordinated unit. Less development time is wasted on management and integrating individual work into the main project. This is a much more efficient way of completing group work.
+	</p>	
 </div><!-- /.blurb -->
