@@ -35,4 +35,23 @@ title: Project 1
 	I learned to consider the platform I am developing for, when designing projects. The problem of building the calibration system initially appeared simple, because I was not considering the strengths and weaknesses of the VR platform
 	</p>
 	
+	<br><br>
+	
+	<h2>Android Logic Timing</h2>
+	
+	<p>
+	Another technical challenge was running the update logic for the program on a timer loop. I needed to implement this on the vision testing tool for Android. This is a suite of tools to aid people with visual impairment. I needed to build a system for moving on-screen graphics used in the test tools. This was a challenge because the user interface can only be updated on the main thread, and the timer runs on a separate thread. I also wanted the architecture to be easily extendable so I could add additional test tools.
+	I started by having each fragment handle its own timing. This meant each tool could have very specialised and efficient timing mechanisms. The cost of this is that I had to duplicate code to build the timing system for each tool. And the lack of uniformity in the tools made it clumsy to integrate multiple tool fragments into the main system, as I needed the application to switch between and run the multiple tool fragments.
+	I made an interface IVisualTest for test tool fragments. This let me use the generic test tool function calls in the outer logic control on the MainActivity. 
+	The methods I included in the interface are:
+		
+	<table>
+		<tr> <td>Run()</td> 	    <td>The main logic loop of the tool. To be called on every update cycle</td> </tr>
+		<tr> <td>ToCSV()</td> 	    <td>Print the test results to a csv formatted string, for saving results</td> </tr>
+		<tr> <td>GetTestType()</td> <td>Return a unique identifier string for the tool, for file naming purposes</td> <t/r>
+	</table>
+
+	The solution I implemented was to have a shared timer on the MainActivity that drives the logic of the application. The current tool’s fragment is stored in the testFrag variable of type IVisualTest Each cycle the timer thread is paused for a preset delay, then I use runOnUiThread() to run current fragment’s Run() function. This makes the outer logic loop generic across all the different test tools. This system is very scalable, I can easily change the current test tool and add new tools without modifying the main timer loop. 
+	</p>
+	
 </div><!-- /.blurb -->
