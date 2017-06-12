@@ -3,6 +3,22 @@ layout: default
 title: Project 1
 ---
 <div class="blurb">
+	
 	<h1>Project 1</h1>
-	<p>Less important body text</p>
+	<h3>Evidence Portfolio</h3>
+	
+	<h2>User Interaction with Google Cardboard</h2>
+	
+	<p>
+	To learn how to develop for the Google VR platform on Android, we made a New Zealand themed demo application. The app lets users view a collection of 360 images from New Zealand settings, displayed in VR mode to be compatible with mobile based VR headsets. It was a challenge to design methods of incorporating interactivity into the project.
+	Previous projects I have worked on using mobile devices have used the touch screen, as that is the main method of user interaction on the platform. But the user cannot touch the screen when their device is inside the headset, so we had to explore alternate means.
+ 
+	I implemented user interaction by having the application change to the next image when the user looks at their feet. To create this functionality I used the accelerometer built into mobile devices. This records the acceleration in each of the 3 axes. When the device is not accelerating relative to the ground, the force of gravity can be used to calculate the orientation of the device. In the context of a VR headset, this means you can determine the direction the user is looking. 
+	The application tracks the device's accelerometer output, and if the Z acceleration is greater than 9 the image is changed. The user has to look up again as a reset mechanism, to prevent the image changing multiple times unintentionally.
+	I chose to have to action mapped in this way because I wanted it to be difficult to trigger the action accidently, but easy to do intentionally. I thought the place the user is least likely to want to look is directly at the ground. Also looking at your feet is a simple instruction to communicate to users and easy for them to understand. I had considered mapping some actions to when the user looks directly upwards, or having left and right head tilts to let the user go back and forwards through the image collection. but I didn’t want to incorporate too many gestures as input actions, as this would result in them being falsely detected when the user is just looking around.
+
+	The demo app also used voice recognition for input. This is a good method for user interaction for VR apps as it does not require direct contact with the device. Different words can be mapped to different actions, making voice commands very versatile. The weakness is that the command can easily be lost among background noise, which in some cases could result in the wrong action being triggered. Also Android voice recognition is only available through an internet connection. But I consider these to be acceptable faults for the functionality offered.
+	For the prototype the command “next” can be used to move to the next image. Voice listening was activated when the image was changed. This was unintuitive and clumsy for users. For a more robust execution I would want a dedicated action that activates the voice prompt.
+	</p>
+	
 </div><!-- /.blurb -->
