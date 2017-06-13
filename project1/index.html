@@ -44,10 +44,10 @@ title: Project 1
 	Another technical challenge was running the update logic for the program on a timer loop. I needed to implement this on the vision testing tool for Android. This is a suite of tools to aid people with visual impairment. I needed to build a system for moving on-screen graphics used in the test tools. This was a challenge because the user interface can only be updated on the main thread, and the timer runs on a separate thread. I also wanted the architecture to be easily extendable so I could add additional test tools.
 	I started by having each fragment handle its own timing. This meant each tool could have very specialised and efficient timing mechanisms. The cost of this is that I had to duplicate code to build the timing system for each tool. And the lack of uniformity in the tools made it clumsy to integrate multiple tool fragments into the main system, as I needed the application to switch between and run the multiple tool fragments.
 	I made an interface IVisualTest for test tool fragments. This let me use the generic test tool function calls in the outer logic control on the MainActivity. 
-	<br>
+	<br><br>
 	The methods I included in the interface are:
 	</p>
-	<br>
+	
 	<table>
 		<tr> <td>Run()</td> 	    <td>The main logic loop of the tool. To be called on every update cycle</td> </tr>
 		<tr> <td>ToCSV()</td> 	    <td>Print the test results to a csv formatted string, for saving results</td> </tr>
