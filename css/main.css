@@ -45,4 +45,5 @@ ul.posts li {
 table, td {
     border-style: solid;
     border-width: 1px;   
+    padding: 5px;
 }
