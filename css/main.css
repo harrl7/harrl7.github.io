@@ -42,7 +42,7 @@ ul.posts li {
     list-style: none;
 }
 
-table td {
+table, td {
     border-style: solid;
     border-width: 1px;   
 }
