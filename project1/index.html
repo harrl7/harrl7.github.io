@@ -12,11 +12,11 @@ title: Project 1
 	<p>
 	To learn how to develop for the Google VR platform on Android, we made a New Zealand themed demo application. The app lets users view a collection of 360 images from New Zealand settings, displayed in VR mode to be compatible with mobile based VR headsets. It was a challenge to design methods of incorporating interactivity into the project.
 	Previous projects I have worked on using mobile devices have used the touch screen, as that is the main method of user interaction on the platform. But the user cannot touch the screen when their device is inside the headset, so we had to explore alternate means.
- 	<br>
+ 	<br><br>
 	I implemented user interaction by having the application change to the next image when the user looks at their feet. To create this functionality I used the accelerometer built into mobile devices. This records the acceleration in each of the 3 axes. When the device is not accelerating relative to the ground, the force of gravity can be used to calculate the orientation of the device. In the context of a VR headset, this means you can determine the direction the user is looking. 
 	The application tracks the device's accelerometer output, and if the Z acceleration is greater than 9 the image is changed. The user has to look up again as a reset mechanism, to prevent the image changing multiple times unintentionally.
 	I chose to have to action mapped in this way because I wanted it to be difficult to trigger the action accidently, but easy to do intentionally. I thought the place the user is least likely to want to look is directly at the ground. Also looking at your feet is a simple instruction to communicate to users and easy for them to understand. I had considered mapping some actions to when the user looks directly upwards, or having left and right head tilts to let the user go back and forwards through the image collection. but I didn’t want to incorporate too many gestures as input actions, as this would result in them being falsely detected when the user is just looking around.
-	<br>
+	<br><br>
 	The demo app also used voice recognition for input. This is a good method for user interaction for VR apps as it does not require direct contact with the device. Different words can be mapped to different actions, making voice commands very versatile. The weakness is that the command can easily be lost among background noise, which in some cases could result in the wrong action being triggered. Also Android voice recognition is only available through an internet connection. But I consider these to be acceptable faults for the functionality offered.
 	For the prototype the command “next” can be used to move to the next image. Voice listening was activated when the image was changed. This was unintuitive and clumsy for users. For a more robust execution I would want a dedicated action that activates the voice prompt.
 	</p>
@@ -72,15 +72,15 @@ title: Project 1
 			
 	<p>
 	My experience has greatened my understanding on developing large scale projects in a team environment. I have learned to build strong group cohesion and how to manage longer term projects.
- 	<br>
+ 	<br><br>
 	Maintaining good communication is imperative to keeping the team moving as a coordinated unit. I had to adjust my mindset from working on small individual tasks. Early on the group was focused on smaller individual tasks, and learning the technologies we would be working with during development. During this time able to get away with weak communication. So I didn’t really bother to keep my team updated on my progress or share resources. It would have helped the team get into a good workflow if we had better communication in the early weeks of the project.
 	Not building strong communication early on in the project hurt the group when we moved into working on large group tasks. The first group task we worked on was to build an API using the Django Rest framework. We didn’t coordinate very well and this made the group much less efficient. We divided efforts unnecessarily and people were working separately where we could have worked more cohesively. This introduced the additional task of integrating everyone's individual work into the final product.
 	Through my work in project I have developed my ability to effectively communicate in a group work environment. I always try and make sure my team is updated on my progress when I am assigned tasks. I show my work when I meet with the group so everyone has a good idea of what I have done. I also keep updated on the progress of the other members of my team. This reduces the strain on the group when integrating my work into larger projects, or when other team members are tasked to expand on work I have developed. 
-	<br>
+	<br><br>
 	Forming a good plan has also been an important part of development. I learned to better manage my time spent on work. And to organise with my team to keep working at optimal efficiency.
-	<br>
+	<br><br>
 	I have learned to better manage my time and plan milestones. I have to plan for setbacks and additional duties that can arise during development. This would often be work for my other classes. When I planned time to set aside to work on my task for the project I would not allow time to work on tasks for my other classes. When my scheduling was thrown off by this I had to rush out work to meet deadlines. And I could not take my time to develop my work as much as I’d have liked. 
-	<br>
+	<br><br>
 	Another aspect of planning is to organize with your team. When I started project I wasn’t very forward thinking in how I collaborated with the rest of my group. I would work in a similar manner to how how I do my regular work. Also it often seemed that team members were unsure of what tasks they were assigned to. And people took on work that could have been spread across the team. Which doesn’t take full advantage of working with a group. And the poor organisation made it needlessly difficult to deal to team level tasks when they occurred. 
 	I learned it is important to have early ongoing communication with my team. Creating a plan of how tasks will be divided amongst the group makes it easier to hold formation during development. When everyone is aware of what their own tasks and what everyone else has been assigned, the group is more able to work as a coordinated unit. Less development time is wasted on management and integrating individual work into the main project. This is a much more efficient way of completing group work.
 	</p>	
