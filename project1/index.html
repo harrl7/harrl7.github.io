@@ -47,13 +47,13 @@ title: Project 1
 	<br>
 	The methods I included in the interface are:
 	</p>
-	
+	<br>
 	<table>
 		<tr> <td>Run()</td> 	    <td>The main logic loop of the tool. To be called on every update cycle</td> </tr>
 		<tr> <td>ToCSV()</td> 	    <td>Print the test results to a csv formatted string, for saving results</td> </tr>
 		<tr> <td>GetTestType()</td> <td>Return a unique identifier string for the tool, for file naming purposes</td> <t/r>
 	</table>
-	
+	<br>
 	<p>
 	The solution I implemented was to have a shared timer on the MainActivity that drives the logic of the application. The current tool’s fragment is stored in the testFrag variable of type IVisualTest Each cycle the timer thread is paused for a preset delay, then I use runOnUiThread() to run current fragment’s Run() function. This makes the outer logic loop generic across all the different test tools. This system is very scalable, I can easily change the current test tool and add new tools without modifying the main timer loop. 
 	</p>
