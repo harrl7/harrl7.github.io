@@ -31,13 +31,14 @@ title: Project 1
 	A technical challenge was to implement user interaction using the magnetic button on the virtual reality image viewer app. This is an input device built into the Google Cardboard headset.
 	<br>
 	<table>
-		<tr> <td><img src="/assets/img/mag1.jpg"></td> 	    <td><img src="/assets/img/mag2.jpg"></td> </tr>
+		<tr> <td><img src="/assets/img/mag1.jpg" width="50%"></td> 	    <td><img src="/assets/img/mag2.jpg" width="50%"></td> </tr>
 		<tr> 
 			<td>On the outside of the headset is magnetic disc. It sits in a long slot so the user can shift its position.</td> 
 			<td>On the corresponding position inside the headset is another magnetic disk. This sits in a fitted slot so that it does not shift around.</td>
 		</tr>
 	</table>
 	<br>
+	<p>
 	We began by testing the button using the Treasure Hunt sample app that comes with the Google VR SDK for Android. In this early testing the button was very inconsistent and would often not register the input.
 	We learnt that the button functions use the phone’s inbuilt magnetic field sensor, and began attempts to implement the button in our app. From monitoring the value of the magnetic field sensor we could see the effect of the button. This also showed that the magnetic field was greatly influenced by factors other than the position of the button. The device can easily shift around while in the headset, the user could place the device in the inverted orientation, and different devices have the sensors in different positions. All these factors affect the magnetic field sensor, so the absolute value of the sensor is not an entirely accurate predictor of the position of the button.
 	Our implementation of the button checked the value of the magnetic sensor against two constants associated with the button being in the up and down positions. This worked well for demonstration but because of the variance in the magnetic field, would not be a good long term solution. We decided to design a system to calibrate the magnetic field, and base the button handling logic of those values. Allowing the app to counteract the variance in the sensor read value.
