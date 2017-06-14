@@ -14,9 +14,9 @@ title: Project 1
 	Previous projects I have worked on using mobile devices have used the touch screen, as that is the main method of user 	interaction on the platform. But the user cannot touch the screen when their device is inside the headset, so we had to explore alternate means.
  	<br><br>
 	I implemented user interaction by having the application change to the next image when the user looks at their feet. To create this functionality I used the accelerometer built into mobile devices. This records the acceleration in each of the 3 axes. When the device is not accelerating relative to the ground, the force of gravity can be used to calculate the orientation of the device. In the context of a VR headset, this means you can determine the direction the user is looking.
-		<br> 
+	<br> 
 	When the device is parallel to ground the force of gravity is aligned with Z axis of the accelerometer. So the Z value given by the accelerometer will be 9.8 or -9.8 depending on if the device is facing screen up or screen down(assuming the device is not otherwise accelerating). When the Z value is greater than 9 the image is changed. This happens when the device is parallel to the ground, screen up. In terms of the VR headset, this means the user is looking towards the ground. The user has to look up again as a reset mechanism, to prevent the image changing multiple times unintentionally.
-		<br>
+	<br>
 	I chose to have to action mapped in this way because I wanted it to be difficult to trigger the action accidently, but easy to do intentionally. I thought the place the user is least likely to want to look is directly at the ground. Also looking at your feet is a simple instruction to communicate to users and easy for them to understand. I had considered mapping some actions to when the user looks directly upwards, or having left and right head tilts to let the user go back and forwards through the image collection. but I didn’t want to incorporate too many gestures as input actions, as this would result in them being falsely detected when the user is just looking around.
 	<br><br>
 	The demo app also used voice recognition for input. This is a good method for user interaction for VR apps as it does not require direct contact with the device. Different words can be mapped to different actions, making voice commands very versatile. The weakness is that the command can easily be lost among background noise, which in some cases could result in the wrong action being triggered. Also Android voice recognition is only available through an internet connection. But I consider these to be acceptable faults for the functionality offered.
@@ -29,6 +29,14 @@ title: Project 1
 	
 	<p>
 	A technical challenge was to implement user interaction using the magnetic button on the virtual reality image viewer app. This is an input device built into the Google Cardboard headset.
+	<br>
+	<table>
+		<tr> <td><img src="assets/img/mag1.jpg"></td> 	    <td><img ></td> </tr>
+		<tr> 
+			<td>On the outside of the headset is magnetic disc. It sits in a long slot so the user can shift its position.</td> 
+			<td>On the corresponding position inside the headset is another magnetic disk. This sits in a fitted slot so that it does not shift around.</td>
+		</tr>
+	</table>
 	<br>
 	We began by testing the button using the Treasure Hunt sample app that comes with the Google VR SDK for Android. In this early testing the button was very inconsistent and would often not register the input.
 	We learnt that the button functions use the phone’s inbuilt magnetic field sensor, and began attempts to implement the button in our app. From monitoring the value of the magnetic field sensor we could see the effect of the button. This also showed that the magnetic field was greatly influenced by factors other than the position of the button. The device can easily shift around while in the headset, the user could place the device in the inverted orientation, and different devices have the sensors in different positions. All these factors affect the magnetic field sensor, so the absolute value of the sensor is not an entirely accurate predictor of the position of the button.
