@@ -114,6 +114,15 @@ Using the Django Rest Framework, we built a web API to deliver data from the bot
 		There are several methods of filtering available in the Django Rest framework. I had to learn the purpose of each filter and evaluate what filter to use for the front end functionality I wanted.
    	</p>
 	
+	<p>
+	We implemented filtering against the url for primary key matches. This allowed us to implement a details view by returning the single entry for a given primary key.
+		<br>
+The client sends a request containing the primary key of the item they wish to retrieve the data for.  This call the ItemDetail view, returning the JSON string for the item entry associated with that primary key.
+		<br>
+This is a useful feature for allowing the front end application to easily retrieve the information on a single entry.
+		
+	</p>
+	
 			
 	<br><br>
 	<h2>Reflective Statement</h2>	
