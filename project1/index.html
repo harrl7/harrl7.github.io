@@ -90,24 +90,31 @@ Using the Django Rest Framework, we built a web API to deliver data from the bot
 	
 	<p>The data is stored as model classes. Our application stored the data of individual plants in the Item class.</p>
 	<img src="/assets/img/model.PNG">
-
 	<br><br>
+			
 	<p>The serializer class converts the model from it's python class to a JSON string</p>
 	<img src="/assets/img/serializer.PNG">
-			
-	<br><br>
+	<br><br>		
+	
 	<p>A view uses the model and the serializer to form a webpage for the user</p>
 	<img src="/assets/img/itemList.PNG">
-			
-	<br><br>
+	<br><br>		
+	
 	<p>The views are mapped onto urls in the urls python file</p>
 	<img src="/assets/img/url.PNG">
-			
 	<br><br>
+			
 	<p>The user can send a url request to get data from the web server</p>
 	<img src="/assets/img/json.PNG">
+	<br><br>
+			
+	<p>
+	   Our web API needed to provide search functionality so the user could query the database and receive a response containing data on matching plants. In order to provide this functionality we needed to be able to filter the JSON text output.
+		<br>
+		There are several methods of filtering available in the Django Rest framework. I had to learn the purpose of each filter and evaluate what filter to use for the front end functionality I wanted.
+   	</p>
 	
-		
+			
 	<br><br>
 	<h2>Reflective Statement</h2>	
 			
