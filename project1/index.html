@@ -79,17 +79,17 @@ title: Project 1
 	The data is stored as model classes. Our application stored the data of individual plants in the Item class.	
 	</p>
 	<br>
-	<p>	
- 	class Item(models.Model):
-	    itemID = models.AutoField(primary_key=True)
-	    speciesID = models.ForeignKey(Species, on_delete=models.CASCADE)
-	    collectionID = models.ForeignKey(Collection, on_delete=models.CASCADE)
-	    latitude = models.FloatField()
-	    longitude = models.FloatField()
-	    siteSpecificDescription = models.TextField(max_length=400)
-	    siteSpecificImgResID = models.IntegerField()
-	    dateCreated = models.DateField(auto_now_add=False)
-	    dateModified = models.DateField(auto_now=False)
+	<p class="snippet">	
+ 	class Item(models.Model):<br>
+	    itemID = models.AutoField(primary_key=True)<br>
+	    speciesID = models.ForeignKey(Species, on_delete=models.CASCADE)<br>
+	    collectionID = models.ForeignKey(Collection, on_delete=models.CASCADE)<br>
+	    latitude = models.FloatField()<br>
+	    longitude = models.FloatField()<br>
+	    siteSpecificDescription = models.TextField(max_length=400)<br>
+	    siteSpecificImgResID = models.IntegerField()<br>
+	    dateCreated = models.DateField(auto_now_add=False)<br>
+	    dateModified = models.DateField(auto_now=False)<br>
 	</p>	
 		
 			
