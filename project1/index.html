@@ -142,8 +142,8 @@ This is a useful feature for allowing the front end application to easily retrie
 	<p>
 	The API also implemented parameter filtering. This lets us map search terms onto the fields of model you are searching. First we implemented this built directly on top of the list entries view. Then it was moved into a filter class which was much more clean and readable.
 	<br><img src="/assets/img/ParamFilter.PNG">
-	<br><br>	
-		
+	<br><br>
+Using the filter class I was able to add filtering on the fields foreign key entries. The syntax for this was confusing to me at 		first because I have not seen the double underscore syntax before. This was used to filter item entries against the common name 	and scientific name of their species. And the name of the collection the item is held in. As these values are not stored 		directly within the item model. It was very important to get this functionality implemented as it made our API much more 		powerful.	
 	</p>
 	
 			
