@@ -47,3 +47,9 @@ table, td {
     border-width: 1px;   
     padding: 5px;
 }
+
+img {
+    border-style: solid;
+    border-width: 2px;   
+}
+
