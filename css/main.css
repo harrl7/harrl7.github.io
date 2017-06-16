@@ -48,7 +48,7 @@ table, td {
     padding: 5px;
 }
 
-snippet {
+.snippet {
     background-color: red;
     font-size: 1.0em;
 }
