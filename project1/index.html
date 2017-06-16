@@ -74,6 +74,9 @@ title: Project 1
 	<br>
 	<p>
 	The solution I implemented was to have a shared timer on the MainActivity that drives the logic of the application. The current tool’s fragment is stored in the testFrag variable of type IVisualTest Each cycle the timer thread is paused for a preset delay, then I use runOnUiThread() to run current fragment’s Run() function. This makes the outer logic loop generic across all the different test tools. This system is very scalable, I can easily change the current test tool and add new tools without modifying the main timer loop. 
+	<br><br>	
+	<img src="/assets/img/model.PNG">
+	<br><br>
 	</p>
 			
 	
