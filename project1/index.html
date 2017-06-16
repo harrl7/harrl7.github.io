@@ -118,7 +118,7 @@ Using the Django Rest Framework, we built a web API to deliver data from the bot
 	We implemented filtering against the url for primary key matches. This allowed us to implement a details view by returning the single entry for a given primary key.
 		<br>
 The client sends a request containing the primary key of the item they wish to retrieve the data for.  This call the ItemDetail view, returning the JSON string for the item entry associated with that primary key.
-		<img src="/assets/img/details.PNG">
+		<br><img src="/assets/img/details.PNG">
 		<br>
 This is a useful feature for allowing the front end application to easily retrieve the information on a single entry.	
 	</p>
@@ -141,7 +141,7 @@ This is a useful feature for allowing the front end application to easily retrie
 	<br><br><br>
 	<p>
 	The API also implemented parameter filtering. This lets us map search terms onto the fields of model you are searching. First we implemented this built directly on top of the list entries view. Then it was moved into a filter class which was much more clean and readable.
-	<br><img src="/assets/img/ParamFilter.PNG">
+	<br><br><img src="/assets/img/ParamFilter.PNG">
 	<br><br>
 Using the filter class I was able to add filtering on the fields foreign key entries. The syntax for this was confusing to me at 		first because I have not seen the double underscore syntax before. This was used to filter item entries against the common name 	and scientific name of their species. And the name of the collection the item is held in. As these values are not stored 		directly within the item model. It was very important to get this functionality implemented as it made our API much more 		powerful.	
 	</p>
