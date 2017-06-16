@@ -123,10 +123,11 @@ The client sends a request containing the primary key of the item they wish to r
 This is a useful feature for allowing the front end application to easily retrieve the information on a single entry.	
 	</p>
 			
-	<br><br>
+	<br><br><br>
 	<p>
 	We also used the Django search filter. This is a built in function of the Django Restful framework that provides single string input parameter queries. The input string is checked against a set of fields of the model you want to search.
 	The Item search view checks the input string against the Item Model’s fields collectionID__collectionName', 'collectionID__collectionDescription', 'siteSpecificDescription', 'speciesID__genName', 'speciesID__sciName', and 'speciesID__genDescription. So the view will return any Item entry where the input string appears in any of these fields.
+	<br><img src="/assets/img/searchView.PNG">
 	<br><img src="/assets/img/search.PNG">
 	<br><br>	
 	The Django search filter was the next filtering method I implemented after primary key filtering. This method was very easy for me to understand and implement. When I first implemented the search I thought it was too broad to be of much use. I was planning on just using it as a means to learn filtering and as a temporary fill in, and then abandoning it in favour of more complex methods that give more specific results. 
