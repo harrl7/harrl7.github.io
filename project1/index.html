@@ -75,7 +75,17 @@ title: Project 1
 	<br><br>
 	<h2>Filtering Django JSON Output</h2>
 			
-	<p>		
+	<p>	
+		class Item(models.Model):
+	  		itemID = models.AutoField(primary_key=True)
+				speciesID = models.ForeignKey(Species, on_delete=models.CASCADE)
+			  	collectionID = models.ForeignKey(Collection, on_delete=models.CASCADE)
+				latitude = models.FloatField()
+			  	longitude = models.FloatField()
+			  	siteSpecificDescription = models.TextField(max_length=400)
+			  	siteSpecificImgResID = models.IntegerField()
+			  	dateCreated = models.DateField(auto_now_add=False)
+			  	dateModified = models.DateField(auto_now=False)
 	
 	</p>	
 		
