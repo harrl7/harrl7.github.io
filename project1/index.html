@@ -17,6 +17,8 @@ title: Project 1
 	<br> 
 	When the device is parallel to ground the force of gravity is aligned with Z axis of the accelerometer. So the Z value given by the accelerometer will be 9.8 or -9.8 depending on if the device is facing screen up or screen down(assuming the device is not otherwise accelerating). When the Z value is greater than 9 the image is changed. This happens when the device is parallel to the ground, screen up. In terms of the VR headset, this means the user is looking towards the ground. The user has to look up again as a reset mechanism, to prevent the image changing multiple times unintentionally.
 	<br>
+	<img src="/assets/img/accel.PNG">
+	<br><br>	
 	I chose to have to action mapped in this way because I wanted it to be difficult to trigger the action accidently, but easy to do intentionally. I thought the place the user is least likely to want to look is directly at the ground. Also looking at your feet is a simple instruction to communicate to users and easy for them to understand. I had considered mapping some actions to when the user looks directly upwards, or having left and right head tilts to let the user go back and forwards through the image collection. but I didn’t want to incorporate too many gestures as input actions, as this would result in them being falsely detected when the user is just looking around.
 	<br><br>
 	The demo app also used voice recognition for input. This is a good method for user interaction for VR apps as it does not require direct contact with the device. Different words can be mapped to different actions, making voice commands very versatile. The weakness is that the command can easily be lost among background noise, which in some cases could result in the wrong action being triggered. Also Android voice recognition is only available through an internet connection. But I consider these to be acceptable faults for the functionality offered.
@@ -52,7 +54,7 @@ title: Project 1
 	<h2>Android Logic Timing</h2>
 	
 	<p>
-	My project team was tasked with building <a href="https://github.com/OtagoPolytechnic/CommSoftTasks/tree/Production/BotanicalGardens_Django_API/mysite">suite of tools to aid people with visual impairment</a>. The tools of this program involve moving graphics across the display to test the user for various forms of vision impairment. This task presented the technical challenge of running the update logic for the program on a timer loop. I needed to build a system for moving on-screen graphics used in the test tools. This was a challenge because the user interface can only be updated on the main thread, and the timer runs on a separate thread. I also wanted the architecture to be easily extendable so I could add additional test tools.
+	My project team was tasked with building <a href="https://github.com/OtagoPolytechnic/CommSoftTasks/tree/Production/VisScanAndroid">suite of tools to aid people with visual impairment</a>. The tools of this program involve moving graphics across the display to test the user for various forms of vision impairment. This task presented the technical challenge of running the update logic for the program on a timer loop. I needed to build a system for moving on-screen graphics used in the test tools. This was a challenge because the user interface can only be updated on the main thread, and the timer runs on a separate thread. I also wanted the architecture to be easily extendable so I could add additional test tools.
 		<br>
 	I started by having each fragment handle its own timing. This meant each tool could have very specialised and efficient timing mechanisms. The cost of this is that I had to duplicate code to build the timing system for each tool. And the lack of uniformity in the tools made it clumsy to integrate multiple tool fragments into the main system, as I needed the application to switch between and run the multiple tool fragments.
 		<br>
@@ -76,7 +78,7 @@ title: Project 1
 	<h2>Filtering Django JSON Output</h2>
 			
 	<p>
-	My team had the task of building an application for the local botanical gardens, to store and present information on their plant collection. The end product will consist of front end mobile application to present information the the user. As well as a back end web service to manage the database containing the plant data. This semester we began working with the Django Rest Framework as a possible platform for the back end database.
+	My team had the task of building an <a href="https://github.com/OtagoPolytechnic/CommSoftTasks/tree/Production/BotanicalGardens_Django_API/mysite">application for the local botanical gardens</a>, to store and present information on their plant collection. The end product will consist of front end mobile application to present information the the user. As well as a back end web service to manage the database containing the plant data. This semester we began working with the Django Rest Framework as a possible platform for the back end database.
 	<br><br>
 Django is a python framework for building web applications. Django uses the model, view, controller architecture. 
 	<br>
