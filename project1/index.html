@@ -10,7 +10,7 @@ title: Project 1
 	<h2>User Interaction with Google Cardboard</h2>
 	
 	<p>
-	To learn how to develop for the Google VR platform on Android, we made a New Zealand themed demo application. The app lets users 		view a collection of 360 images from New Zealand settings, displayed in VR mode to be compatible with mobile based VR headsets. 	It was a challenge to design methods of incorporating interactivity into the project.
+	To learn how to develop for the Google VR platform on Android, we made a <a href="https://github.com/OtagoPolytechnic/CommSoftTasks/tree/Production/VrPanoViewer">New Zealand themed demo application</a>. The app lets users 		view a collection of 360 images from New Zealand settings, displayed in VR mode to be compatible with mobile based VR headsets. 	It was a challenge to design methods of incorporating interactivity into the project.
 	Previous projects I have worked on using mobile devices have used the touch screen, as that is the main method of user 	interaction on the platform. But the user cannot touch the screen when their device is inside the headset, so we had to explore alternate means.
  	<br><br>
 	I implemented user interaction by having the application change to the next image when the user looks at their feet. To create this functionality I used the accelerometer built into mobile devices. This records the acceleration in each of the 3 axes. When the device is not accelerating relative to the ground, the force of gravity can be used to calculate the orientation of the device. In the context of a VR headset, this means you can determine the direction the user is looking.
