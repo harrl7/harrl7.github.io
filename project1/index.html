@@ -106,18 +106,19 @@ Using the Django Rest Framework, we built a web API to deliver data from the bot
 			
 	<p>The user can send a url request to get data from the web server</p>
 	<img src="/assets/img/json.PNG">
-	<br><br>
+	<br><br><br>
 			
 	<p>
 	   Our web API needed to provide search functionality so the user could query the database and receive a response containing data on matching plants. In order to provide this functionality we needed to be able to filter the JSON text output.
 		<br>
 		There are several methods of filtering available in the Django Rest framework. I had to learn the purpose of each filter and evaluate what filter to use for the front end functionality I wanted.
    	</p>
-	
+	<br>
 	<p>
 	We implemented filtering against the url for primary key matches. This allowed us to implement a details view by returning the single entry for a given primary key.
 		<br>
 The client sends a request containing the primary key of the item they wish to retrieve the data for.  This call the ItemDetail view, returning the JSON string for the item entry associated with that primary key.
+		<img src="/assets/img/details.PNG">
 		<br>
 This is a useful feature for allowing the front end application to easily retrieve the information on a single entry.
 		
