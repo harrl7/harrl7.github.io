@@ -75,22 +75,24 @@ title: Project 1
 	<br><br>
 	<h2>Filtering Django JSON Output</h2>
 	
+	<>
+			
+			
 	<p>
-	The data is stored as model classes. Our application stored the data of individual plants in the Item class.	
-	</p>
+	My team had the task of building an application for the local botanical gardens, to store and present information on their plant collection. The end product will consist of front end mobile application to present information the the user. As well as a back end web service to manage the database containing the plant data. This semester we began working the Django Rest Framework as a possible platform for the back end database.
+	<br><br>
+Django is a python framework for building web applications. Django uses the model, view, controller architecture. 
 	<br>
-	<p class="snippet">	
- 	class Item(models.Model):<br>
-	    itemID = models.AutoField(primary_key=True)<br>
-	    speciesID = models.ForeignKey(Species, on_delete=models.CASCADE)<br>
-	    collectionID = models.ForeignKey(Collection, on_delete=models.CASCADE)<br>
-	    latitude = models.FloatField()<br>
-	    longitude = models.FloatField()<br>
-	    siteSpecificDescription = models.TextField(max_length=400)<br>
-	    siteSpecificImgResID = models.IntegerField()<br>
-	    dateCreated = models.DateField(auto_now_add=False)<br>
-	    dateModified = models.DateField(auto_now=False)<br>
-	</p>	
+The Django Rest Framework is a toolkit for building restful web APIs in Django.
+	<br>
+Using the Django Rest Framework, we built a web API to deliver data from the botanical gardens database in the JSON format. This service could then be utilized by front end applications to present information to the end user.
+	
+	</p>
+			
+	<br>
+			
+	<img src="/assets/img/model.png"></td>
+	<caption>The data is stored as model classes. Our application stored the data of individual plants in the Item class.</caption>
 		
 			
 	<br><br>
