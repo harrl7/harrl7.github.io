@@ -1,6 +1,18 @@
+// https://coolors.co/222222-f8eee7-1d2731-1c1c1c-331e38
+
+:root {
+    --main-bg-color: #1C1C1C;
+    --inner-bg-color: #F8EEE7;
+    
+    --col-purple: #331E38;
+    --col-dk-blue: #1D2731;
+}
+
+
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: var(--main-bg-color);
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
