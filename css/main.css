@@ -93,6 +93,7 @@ img {
 
 #Vision_Tools figure {
     margin: 20px auto;
+    padding: 10px;
     background-color: var(--col-dk-grey);
 }
 
