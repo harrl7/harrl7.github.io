@@ -105,6 +105,7 @@ img {
 
 #White_Line {
     background-color: var(--col-lt-grey);   
+    height: 1px;
 }
 
 #Vision_Tools figure figcaption {
