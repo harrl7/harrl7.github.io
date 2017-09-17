@@ -91,6 +91,8 @@ img {
 
 #Nearby_Sites_Table {
     margin: 0 auto;
+    background-color: var(--col-dk-grey);
+    color: var(--col-lt-grey);
 }
 
 #Vision_Tools figure {
