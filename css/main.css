@@ -46,6 +46,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.Table_Of_Contents {
+    font-size: large;   
+    color: var(--col-dk-grey);
+}
+
 article {
     padding: 50px 5px;   
 }
