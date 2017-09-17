@@ -4,6 +4,7 @@
     
     --col-purple: #331E38;
     --col-dk-blue: #1D2731;
+    --col-dk-grey: #222222;
 }
 
 body {
@@ -29,6 +30,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
@@ -89,6 +91,7 @@ img {
 
 #Vision_Tools figure {
     margin: 20px auto;
+    background-color: var(--inner-bg-color);
 }
 
 
