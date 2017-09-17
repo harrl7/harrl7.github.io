@@ -96,11 +96,11 @@ img {
     background-color: var(--col-dk-grey);
 }
 
-#Vision_Tools figure img{
+#Vision_Tools figure img {
     margin: 5px auto;
 }
 
-#Vision_Tools figure figcaption{
+#Vision_Tools figure figcaption {
     color: var(--col-lt-grey);
 }
 
