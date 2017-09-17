@@ -103,6 +103,10 @@ img {
     width: 95%;
 }
 
+#White_Line {
+    background-color: var(--col-lt-grey);   
+}
+
 #Vision_Tools figure figcaption {
     color: var(--col-lt-grey);
     margin: 5px auto;
