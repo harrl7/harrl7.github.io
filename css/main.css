@@ -94,4 +94,12 @@ img {
     background-color: var(--col-dk-grey);
 }
 
+#Vision_Tools figure img{
+    margin: 5px auto;
+}
+
+#Vision_Tools figure figcaption{
+    color: #ffffff;
+}
+
 
