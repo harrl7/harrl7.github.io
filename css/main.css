@@ -100,11 +100,13 @@ img {
 }
 
 #Vision_Tools figure img {
-
+    width: 95%;
 }
 
 #Vision_Tools figure figcaption {
     color: var(--col-lt-grey);
+    margin: 5px auto;
+    width: 95%;
 }
 
 
