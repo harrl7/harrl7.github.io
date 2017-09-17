@@ -4,7 +4,9 @@
     
     --col-purple: #331E38;
     --col-dk-blue: #1D2731;
+    
     --col-dk-grey: #222222;
+    --col-lt-grey: #CCCCCC;
 }
 
 body {
@@ -99,7 +101,7 @@ img {
 }
 
 #Vision_Tools figure figcaption{
-    color: #ffffff;
+    color: var(--col-lt-grey);
 }
 
 
