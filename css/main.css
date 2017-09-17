@@ -98,13 +98,13 @@ img {
    margin: 10px 10px;
 }
 
-#Vision_Tools figure {
+#Vision_Tool figure {
     margin: 20px auto;
     padding: 10px;
     background-color: var(--col-dk-grey);
 }
 
-#Vision_Tools figure img {
+#Vision_Tool figure img {
     width: 95%;
 }
 
@@ -114,7 +114,7 @@ img {
     margin: 10px 0;
 }
 
-#Vision_Tools figure figcaption {
+#Vision_Tool figure figcaption {
     color: var(--col-lt-grey);
     margin: 5px auto;
     width: 95%;
