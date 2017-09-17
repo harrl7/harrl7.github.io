@@ -94,7 +94,7 @@ img {
     color: var(--col-lt-grey);
 }
 
-#Nearby_Sites_Fig {
+#Nearby_Sites_Fig figcaption {
    margin: 10px 10px;
 }
 
