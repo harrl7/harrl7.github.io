@@ -97,6 +97,7 @@ img {
     margin: auto;
 }
 
+
 .Fig_Table {
     margin: 0 auto;
     background-color: var(--col-dk-grey);
@@ -106,18 +107,21 @@ img {
 
 .Fig_Table_Item {
     width: 90%;
-    margin: 10px 10px;
-}
-
-#Vision_Tool figure {
     margin: 20px auto;
     padding: 10px;
-    background-color: var(--col-dk-grey);
-}
-
-#Vision_Tool figure img {
     
 }
+
+.Fig_Table_Item figcaption {
+    color: var(--col-lt-grey);
+    margin: 5px auto;
+}
+
+.Fig_Table_Item img {
+    width: 100%;
+}
+
+
 
 #White_Line {
     background-color: var(--col-lt-grey);   
@@ -125,10 +129,6 @@ img {
     margin: 10px 0;
 }
 
-#Vision_Tool figure figcaption {
-    color: var(--col-lt-grey);
-    margin: 5px auto;
-    width: 95%;
-}
+
 
 
