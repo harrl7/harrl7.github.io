@@ -92,6 +92,7 @@ img {
     border-width: 2px;   
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 
@@ -120,10 +121,11 @@ img {
 
 
 .Full_Width_Fig {
-     margin: 0 auto;
+    margin: 20 auto;
     background-color: var(--col-dk-grey);
     color: var(--col-lt-grey);
     width: 100%;
+    padding: 10px 50px;
 }
 
 .White_Line {
