@@ -33,12 +33,18 @@
 					</div>
 					
 					<div id="navbar" class="collapse navbar-collapse">
+						
 						<ul class="nav navbar-nav">
 							<li class={% if page.url == "/" %}"active"{% endif %}>			<a href="/">Home</a></li>
 							<li class={% if page.url == "/education/" %}"active"{% endif %}>	<a href="/education">Education</a></li>
 							<li class={% if page.url == "/android/" %}"active"{% endif %}>		<a href="/android">Android</a></li>
 							<li class={% if page.url == "/unity/" %}"active"{% endif %}>		<a href="/unity">Unity</a></li>
 						</ul>
+						
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href=".content">Top</a></li>
+						</ul>
+						
 					</div><!--/.nav-collapse -->
 				</div>
 			</nav>
