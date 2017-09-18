@@ -121,7 +121,7 @@ img {
 
 
 .Full_Width_Fig {
-    margin: 20 auto;
+    margin: 20px auto;
     background-color: var(--col-dk-grey);
     color: var(--col-lt-grey);
     width: 100%;
