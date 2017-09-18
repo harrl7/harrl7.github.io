@@ -101,6 +101,7 @@ img {
     margin: 0 auto;
     background-color: var(--col-dk-grey);
     color: var(--col-lt-grey);
+    width: 100%;
 }
 
 .Fig_Table_Item {
