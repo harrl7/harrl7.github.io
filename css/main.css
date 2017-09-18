@@ -97,13 +97,13 @@ img {
     margin: auto;
 }
 
-#Nearby_Sites_Table {
+.Fig_Table {
     margin: 0 auto;
     background-color: var(--col-dk-grey);
     color: var(--col-lt-grey);
 }
 
-.Nearby_Sites_Fig figcaption {
+.Fig_Table_Item figcaption {
    margin: 10px 10px;
 }
 
