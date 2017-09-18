@@ -103,8 +103,9 @@ img {
     color: var(--col-lt-grey);
 }
 
-.Fig_Table_Item figcaption {
-   margin: 10px 10px;
+.Fig_Table_Item {
+    width: 90%;
+    margin: 10px 10px;
 }
 
 #Vision_Tool figure {
@@ -114,7 +115,7 @@ img {
 }
 
 #Vision_Tool figure img {
-    width: 95%;
+    
 }
 
 #White_Line {
