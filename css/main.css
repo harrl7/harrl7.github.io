@@ -134,6 +134,7 @@ article {
     color: var(--col-lt-grey);
     #margin: 5px auto;
     font-size: 10pt;
+	height: 150px;
 }
 
 .Fig_Table_Item img {
