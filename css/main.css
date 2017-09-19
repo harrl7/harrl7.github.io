@@ -127,7 +127,7 @@ article {
 
 .Fig_Table_Item {
     padding: 1px;
-    
+    width: 100%;
 }
 
 .Fig_Table_Item figcaption {
