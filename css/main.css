@@ -144,6 +144,20 @@ article {
     width: 100%;
 }
 
+
+/*
+*  -------- Captions --------
+*/
+
+.Fig_Caption_List {
+	margin: 20px 0;
+	font-size: 12pt;
+}
+
+.Fig_Caption_List li {
+	margin: 10px 0;
+}
+
 /*
 *  -------- Figure Full --------
 */ 
