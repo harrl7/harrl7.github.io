@@ -126,6 +126,11 @@ article {
 	table-layout: auto;
 }
 
+.Fig_Table img{
+    width: 95%;
+	margin: 0 auto;
+}
+
 .Fig_Table_Item {
     padding: 1px;
 }
