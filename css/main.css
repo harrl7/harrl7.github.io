@@ -126,11 +126,6 @@ article {
 	table-layout: auto;
 }
 
-.Fig_Table img{
-    width: 95%;
-	margin: 0 auto;
-}
-
 .Fig_Table_Item {
     padding: 1px;
 }
@@ -140,14 +135,8 @@ article {
 }
 
 .Fig_Table_Item figcaption {
-    
+    font-size: 14pt;
 }
-
-.Fig_Table_Caption_Row td {
-    margin: 5px auto;
-    font-size: 10pt;
-}
-
 
 
 /*
@@ -162,6 +151,7 @@ article {
 .Fig_Caption_List li {
 	margin: 10px 0;
 }
+
 
 /*
 *  -------- Figure Full --------
