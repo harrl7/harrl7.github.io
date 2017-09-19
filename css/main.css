@@ -134,10 +134,11 @@ article {
     color: var(--col-lt-grey);
     margin: 5px auto;
     font-size: 10pt;
+	width:30%;
 }
 
 .Fig_Table_Item img {
-    width: 100% !important;
+    width: 100%;
 }
 
 /*
