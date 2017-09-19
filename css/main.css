@@ -139,7 +139,7 @@ article {
     color: var(--col-lt-grey);
     margin: 5px auto;
     font-size: 10pt;
-	width: 95%;
+	height: 100%;
 }
 
 .Fig_Table_Item img {
