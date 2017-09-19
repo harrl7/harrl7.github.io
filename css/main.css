@@ -9,6 +9,12 @@
     --col-lt-grey: #CCCCCC;
 }
 
+
+
+/*
+*  ======== Core ========
+*/ 
+	
 body {
     margin: 60px auto;
     width: 70%;
@@ -24,6 +30,36 @@ body {
     margin-bottom: 50px; 
 }
 
+h1 {
+    font-weight: bold;
+    color: var(--main-bg-color);
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+table, td {
+    border-style: solid;
+    border-width: 1px;   
+    padding: 5px;
+}
+
+img {
+    border-style: solid;
+    border-width: 2px;   
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+	
+	
+	
+/*
+*  ======== Nav ========
+*/ 
 
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -37,14 +73,20 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 
-
 a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+
+
+/*
+*  ======== Contents Layout ========
+*/ 
 
 .Table_Of_Contents {
     font-size: xx-large;   
@@ -55,46 +97,15 @@ article {
     padding: 50px 5px;   
 }
 
-h1 {
-    font-weight: bold;
-    color: var(--main-bg-color);
-}
-
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-}
-
-table, td {
-    border-style: solid;
-    border-width: 1px;   
-    padding: 5px;
-}
 
 
-img {
-    border-style: solid;
-    border-width: 2px;   
-    display: block;
-    margin: auto;
-    width: 100%;
-}
+/* 
+*  ======== Figures ========
+*/ 
 
+/*
+*  -------- Figure Table --------
+*/ 
 
 .Fig_Table {
     margin: 0 auto;
@@ -118,7 +129,9 @@ img {
     width: 100%;
 }
 
-
+/*
+*  -------- Figure Full --------
+*/ 
 
 .Full_Width_Fig {
     margin: 20px auto;
