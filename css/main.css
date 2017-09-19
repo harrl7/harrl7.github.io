@@ -135,10 +135,11 @@ article {
     padding: 1px;
 }
 
-.Fig_Table_Item figcaption {
+.Fig_Table figcaption {
     color: var(--col-lt-grey);
-    #margin: 5px auto;
+    margin: 5px auto;
     font-size: 10pt;
+	width: 95%;
 }
 
 .Fig_Table_Item img {
