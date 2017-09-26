@@ -119,7 +119,7 @@ article {
 */ 
 
 .Fig_Table {
-    margin: 20 auto;
+    margin: 40px auto;
     background-color: var(--col-dk-grey);
     color: var(--col-lt-grey);
     width: 100%;
